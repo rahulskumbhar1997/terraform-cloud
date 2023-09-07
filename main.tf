@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "ap-south-1"
+}
+
 resource "aws_vpc" "sample-vpc" {
   cidr_block = "172.16.83.0/24"
   tags = {
